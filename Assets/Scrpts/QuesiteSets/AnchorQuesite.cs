@@ -23,6 +23,7 @@ public class AnchorQuesite : MonoBehaviour,QuesiteSet
     public int getAttemps(){ return attempts; }
     public int getBestScore(){ return bestScore; }
     public int getCurrentID() { return currentID;  }
+    public int getCurrentScore() { return currentScore; }
 
     public int getNumberOfQuestions() { return questions.Count; }
     public List<MyTriple> getQuestions(){ return questions;}

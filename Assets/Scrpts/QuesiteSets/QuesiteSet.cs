@@ -13,6 +13,7 @@ public interface QuesiteSet {
     int getBestScore();
     Status getStatus();
     Status registerAttempt();
+    int getCurrentScore();
     List<MyTriple> getQuestions();
     int getNumberOfQuestions();
 

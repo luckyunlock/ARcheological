@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class PapyrManager : MonoBehaviour
 {
     public GameObject duringQuestions;
     public GameObject afterQuestions;
     public GameObject questionManager_gameObject;
+    public Text resultText;
     public QuestionManager questionManager;
 
     // Use this for initialization
@@ -22,9 +24,11 @@ public class PapyrManager : MonoBehaviour
         questionManager.startCountDown();
     }
     public void displayResult(){
+        resultText.text = "Your result is:\n" + questionManager.question_set.getCurrentScore();
         this.gameObject.SetActive(true);
         duringQuestions.SetActive(false);
         afterQuestions.SetActive(true);
+
     }
     public void closePapyr(){
         this.gameObject.SetActive(false);

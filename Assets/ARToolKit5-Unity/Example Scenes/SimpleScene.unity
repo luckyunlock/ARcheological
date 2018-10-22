@@ -2888,7 +2888,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: The result is
+  m_Text: 'The result is:'
 --- !u!222 &1511725936
 CanvasRenderer:
   m_ObjectHideFlags: 0
