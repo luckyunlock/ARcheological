@@ -15,7 +15,14 @@ public interface QuesiteSet {
     Status registerAttempt();
     List<MyTriple> getQuestions();
     int getNumberOfQuestions();
-    void registerResponse(int qID, string response);
+
+    /* Returns the current question if available, null otherwise */
+    MyTriple getCurrentQuestion();
+
+    /* Register the response of the current question 
+     * Returns the new current question
+    */
+    MyTriple registerResponse(string response);
     int getCurrentID();
 }
 

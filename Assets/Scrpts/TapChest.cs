@@ -7,10 +7,11 @@ public class TapChest : MonoBehaviour {
     // Use this for initialization
     public GameObject chest_top;
     public GameObject papyr;
-
+    public PapyrManager papyrManager;
 	void Start () {
-		
-	}
+        papyrManager = (PapyrManager) papyr.GetComponent(typeof(PapyrManager));
+        if (papyrManager == null) Debug.Log("PapirManager on chest is broken!");
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -22,6 +23,7 @@ public class TapChest : MonoBehaviour {
         chest_top.transform.Rotate(-90, 0, 0);
         Destroy(this.gameObject);
         //yield return new WaitForSeconds(1);
-        papyr.SetActive(true);
+        papyrManager.openPapyr();
+
     }
 }

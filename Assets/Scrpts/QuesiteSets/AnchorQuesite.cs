@@ -27,8 +27,9 @@ public class AnchorQuesite : MonoBehaviour,QuesiteSet
     public int getNumberOfQuestions() { return questions.Count; }
     public List<MyTriple> getQuestions(){ return questions;}
     public Status getStatus(){return status;}
-    public void registerResponse(int qID, string response){
+    public MyTriple registerResponse(string response){
         Debug.Log("User respons " + response);
+        int qID = currentID;
         currentID++;
         if (String.Compare(response, "pass", ignoreCase: true) != 0){
             bool bool_response = (String.Compare(response, "true", ignoreCase: true) == 0);
@@ -37,6 +38,7 @@ public class AnchorQuesite : MonoBehaviour,QuesiteSet
             else
                 currentScore--;
         }
+        return getCurrentQuestion();
     }
 
     public Status registerAttempt(){
@@ -48,6 +50,10 @@ public class AnchorQuesite : MonoBehaviour,QuesiteSet
         if (attempts >= 4) { this.status = Status.Failed; return status; }
         this.status = Status.Tried;
         return status;
+    }
+
+    public MyTriple getCurrentQuestion(){
+        return (currentID >= questions.Count) ? null : questions[currentID];
     }
 }
 
