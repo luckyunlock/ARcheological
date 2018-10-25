@@ -31,15 +31,14 @@ public class QuestionManager : MonoBehaviour {
     public void startCountDown(){ 
         seconds_remained = 10; 
         InvokeRepeating("decreaseCountDown", 1.0f, 1.0f);
-        Debug.Log("COUNTDOWN SHOULD BE STARTED");
     }
     public void stopCountDown(){ CancelInvoke(); }
 
     private void decreaseCountDown(){
         if (seconds_remained == -1){ //Notify who needs it
+            papyrManager.displayResult();
             question_set.registerAttempt();
             CancelInvoke();
-            papyrManager.displayResult();
         }
         else{
             countDown_text.text = ""+seconds_remained;
