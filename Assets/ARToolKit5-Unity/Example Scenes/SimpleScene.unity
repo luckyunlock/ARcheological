@@ -124,7 +124,6 @@ GameObject:
   - component: {fileID: 42971485}
   - component: {fileID: 42971484}
   - component: {fileID: 42971483}
-  - component: {fileID: 42971482}
   m_Layer: 5
   m_Name: Button-Close
   m_TagString: Untagged
@@ -151,20 +150,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.00009098408, y: -220.00006}
   m_SizeDelta: {x: 180, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &42971482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 42971480}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35c1849ba71624fb2b09efb460d7504b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  papyrManager_gameObject: {fileID: 79530783}
-  papyrManager: {fileID: 0}
-  button: {fileID: 42971483}
 --- !u!114 &42971483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,7 +188,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 42971484}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 79530787}
+        m_MethodName: closePapyr
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &42971484
@@ -343,7 +339,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &79530784
 RectTransform:
   m_ObjectHideFlags: 0
@@ -845,7 +841,6 @@ GameObject:
   - component: {fileID: 337556606}
   - component: {fileID: 337556605}
   - component: {fileID: 337556604}
-  - component: {fileID: 337556607}
   m_Layer: 5
   m_Name: Button-Yes
   m_TagString: Untagged
@@ -911,17 +906,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1669707317}
+        m_MethodName: forwardResponse
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: true
           m_BoolArgument: 0
-        m_CallState: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &337556605
@@ -958,21 +953,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 337556602}
   m_CullTransparentMesh: 0
---- !u!114 &337556607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 337556602}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c506b8d53bf6349539b0fcab634bce26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  opt: true
-  questionManager_gameObject: {fileID: 1669707315}
-  questionManager: {fileID: 0}
-  button: {fileID: 337556604}
 --- !u!1 &409264544
 GameObject:
   m_ObjectHideFlags: 0
@@ -1502,7 +1482,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &666816290
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1566,7 +1546,6 @@ GameObject:
   - component: {fileID: 719627939}
   - component: {fileID: 719627938}
   - component: {fileID: 719627937}
-  - component: {fileID: 719627940}
   m_Layer: 5
   m_Name: Button-Pass
   m_TagString: Untagged
@@ -1631,7 +1610,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 719627938}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1669707317}
+        m_MethodName: forwardResponse
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: pass
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &719627938
@@ -1668,21 +1658,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 719627935}
   m_CullTransparentMesh: 0
---- !u!114 &719627940
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 719627935}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c506b8d53bf6349539b0fcab634bce26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  opt: pass
-  questionManager_gameObject: {fileID: 1669707315}
-  questionManager: {fileID: 0}
-  button: {fileID: 719627937}
 --- !u!1 &749452074
 GameObject:
   m_ObjectHideFlags: 0
@@ -3696,7 +3671,6 @@ GameObject:
   - component: {fileID: 1795643571}
   - component: {fileID: 1795643570}
   - component: {fileID: 1795643569}
-  - component: {fileID: 1795643572}
   m_Layer: 5
   m_Name: Button-No
   m_TagString: Untagged
@@ -3761,7 +3735,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1795643570}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1669707317}
+        m_MethodName: forwardResponse
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: false
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1795643570
@@ -3798,21 +3783,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1795643567}
   m_CullTransparentMesh: 0
---- !u!114 &1795643572
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1795643567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c506b8d53bf6349539b0fcab634bce26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  opt: false
-  questionManager_gameObject: {fileID: 1669707315}
-  questionManager: {fileID: 0}
-  button: {fileID: 1795643569}
 --- !u!1 &1918195791
 GameObject:
   m_ObjectHideFlags: 0
