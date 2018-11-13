@@ -15,7 +15,7 @@ public class AnchorQuesite : MonoBehaviour,QuesiteSet
 
     public AnchorQuesite(){
         questions.Add(new MyTriple(0, "q0", true));
-        questions.Add(new MyTriple(1, "q1", false));
+        questions.Add(new MyTriple(1, "q1", true));
         questions.Add(new MyTriple(2, "q2", true));
         questions.Add(new MyTriple(3, "q3", true));
     }
