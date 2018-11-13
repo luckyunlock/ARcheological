@@ -58,4 +58,8 @@ public class QuestionManager : MonoBehaviour {
             papyrManager.displayResult();
     }
 
+    public Status getStatus(){
+        return question_set.getStatus();
+    }
+
 }

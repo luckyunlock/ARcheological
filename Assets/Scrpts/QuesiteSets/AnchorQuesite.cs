@@ -18,6 +18,8 @@ public class AnchorQuesite : MonoBehaviour,QuesiteSet
         questions.Add(new MyTriple(1, "q1", true));
         questions.Add(new MyTriple(2, "q2", true));
         questions.Add(new MyTriple(3, "q3", true));
+        questions.Add(new MyTriple(4, "q4", true));
+        questions.Add(new MyTriple(5, "q5", true));
     }
 
     public int getAttemps(){ return attempts; }
@@ -29,7 +31,6 @@ public class AnchorQuesite : MonoBehaviour,QuesiteSet
     public List<MyTriple> getQuestions(){ return questions;}
     public Status getStatus(){return status;}
     public MyTriple registerResponse(string response){
-        Debug.Log("User respons " + response);
         int qID = currentID;
         currentID++;
         if (String.Compare(response, "pass", ignoreCase: true) != 0){

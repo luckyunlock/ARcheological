@@ -409,6 +409,11 @@ MonoBehaviour:
   questionManager_gameObject: {fileID: 1669707315}
   resultText: {fileID: 1511725935}
   questionManager: {fileID: 0}
+  success: {fileID: 535759012}
+  fail: {fileID: 2123277035}
+  retriable: {fileID: 714483056}
+  chestCollider: {fileID: 1488311990}
+  chestTop: {fileID: 760755792}
 --- !u!1001 &105165228
 Prefab:
   m_ObjectHideFlags: 0
@@ -1990,7 +1995,7 @@ GameObject:
   - component: {fileID: 760755793}
   - component: {fileID: 760755794}
   m_Layer: 8
-  m_Name: Top
+  m_Name: chestTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2022,11 +2027,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cf885572907e44e8ad637bb95824a73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  succeded_obj: {fileID: 535759012}
-  failed_obj: {fileID: 2123277035}
-  retriable_obj: {fileID: 714483056}
-  pippo: {fileID: 1007614390}
-  question_set_gameObject: {fileID: 1007614390}
 --- !u!1 &812125998
 GameObject:
   m_ObjectHideFlags: 0
@@ -3439,7 +3439,7 @@ GameObject:
   - component: {fileID: 1488311992}
   - component: {fileID: 1488311993}
   m_Layer: 8
-  m_Name: Sorround cube
+  m_Name: chestCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3472,7 +3472,6 @@ MonoBehaviour:
   chest_top: {fileID: 760755792}
   papyr: {fileID: 79530783}
   papyrManager: {fileID: 0}
-  chestManager: {fileID: 0}
 --- !u!65 &1488311993
 BoxCollider:
   m_ObjectHideFlags: 0
