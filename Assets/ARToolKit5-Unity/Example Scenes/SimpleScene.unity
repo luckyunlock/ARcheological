@@ -414,6 +414,9 @@ MonoBehaviour:
   retriable: {fileID: 714483056}
   chestCollider: {fileID: 1488311990}
   chestTop: {fileID: 760755792}
+  initialPosition: {x: 0, y: 0, z: 0}
+  initialRotation: {x: 0, y: 0, z: 0, w: 0}
+  tapChest: {fileID: 0}
 --- !u!1001 &105165228
 Prefab:
   m_ObjectHideFlags: 0
@@ -1015,7 +1018,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 409264544}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.15}
+  m_LocalPosition: {x: 0, y: 0.21, z: -0.04}
   m_LocalScale: {x: 2.8, y: 0.1, z: 2}
   m_Children: []
   m_Father: {fileID: 987841337}
@@ -3472,6 +3475,8 @@ MonoBehaviour:
   chest_top: {fileID: 760755792}
   papyr: {fileID: 79530783}
   papyrManager: {fileID: 0}
+  initialPosition: {x: 0, y: 0, z: 0}
+  initialRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!65 &1488311993
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -46,7 +46,8 @@ public class QuestionManager : MonoBehaviour {
         }
     }
 
-    private void dispayQuestion(){
+    public void dispayQuestion(){
+        currentQuestion = question_set.getCurrentQuestion();
         question_text.text = currentQuestion.q;
     }
 

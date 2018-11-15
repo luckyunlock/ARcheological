@@ -46,6 +46,7 @@ public class AnchorQuesite : MonoBehaviour,QuesiteSet
     public Status registerAttempt(){
         int old_currentScore = currentScore;
         currentScore = 0;
+        currentID = 0;
         attempts++;
         if (old_currentScore > bestScore) bestScore = old_currentScore;
         if (old_currentScore >= 5) { this.status = Status.Successed; return status; }

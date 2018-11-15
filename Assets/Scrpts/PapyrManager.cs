@@ -16,11 +16,14 @@ public class PapyrManager : MonoBehaviour
     public GameObject retriable;
     public GameObject chestCollider;
     public GameObject chestTop;
+    public TapChest tapChest;
 
     // Use this for initialization
     void Awake(){
         questionManager = (QuestionManager)questionManager_gameObject.GetComponent(typeof(QuestionManager));
         if (questionManager == null) Debug.LogError("Error retriving questionManager for PapyrManager");
+        tapChest = (TapChest)chestCollider.GetComponent(typeof(TapChest));
+        if (tapChest == null) Debug.LogError("Error retriving TapChest for PapyrManager");
     }
 
     public void openPapyr(){
@@ -28,6 +31,8 @@ public class PapyrManager : MonoBehaviour
         duringQuestions.SetActive(true);
         afterQuestions.SetActive(false);
         questionManager.startCountDown();
+
+        questionManager.dispayQuestion();
     }
     public void displayResult(){
         resultText.text = "Your result is:\n" + questionManager.question_set.getCurrentScore();
@@ -46,8 +51,6 @@ public class PapyrManager : MonoBehaviour
         success.SetActive(false);
         fail.SetActive(false);
         retriable.SetActive(false);
-        Debug.Log("Lo stato è:\n");
-        Debug.Log(questionManager.getStatus().ToString());
         if (questionManager.getStatus() == Status.Successed){
             success.SetActive(true);
             Destroy(chestCollider);
@@ -56,18 +59,14 @@ public class PapyrManager : MonoBehaviour
         if (questionManager.getStatus()==Status.Failed){
             fail.SetActive(true);
             Destroy(chestCollider);
-            chestTop.transform.position = new Vector3(0, 0, 0);
-            //chestTop.transform.Translate(new Vector3(0, (float)-0.028, (float)0.014));
-            chestTop.transform.Rotate(90, 0, 0);
+            tapChest.closeChest();
         }
 
         if (questionManager.getStatus() == Status.Tried){
             retriable.SetActive(true);
-            chestTop.transform.Translate(new Vector3(0, (float)-0.028, (float)0.014));
-            chestTop.transform.Rotate(90, 0, 0);
+            tapChest.closeChest();
         }
     }
-
 
 
 }
