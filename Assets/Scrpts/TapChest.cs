@@ -12,6 +12,8 @@ public class TapChest : MonoBehaviour {
     public Vector3 initialPosition;
     public Quaternion initialRotation;
 
+    public bool enabled = true;
+
     void Start () {
         initialPosition = chest_top.transform.position;
         initialRotation = chest_top.transform.rotation;
@@ -21,9 +23,11 @@ public class TapChest : MonoBehaviour {
 	
     void OnMouseDown(){
         // this object was clicked - do something
-        this.openChest();
-        papyrManager.openPapyr(initialPosition,initialRotation);
-
+        if(enabled){
+            this.openChest();
+            papyrManager.openPapyr();
+        }
+        enabled = false;
     }
 
     public void openChest(){
@@ -34,5 +38,6 @@ public class TapChest : MonoBehaviour {
     public void closeChest(){
         chest_top.transform.position = initialPosition;
         chest_top.transform.rotation = initialRotation;
+        enabled = true;
     }
 }

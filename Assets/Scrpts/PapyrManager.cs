@@ -18,6 +18,7 @@ public class PapyrManager : MonoBehaviour
     public GameObject chestTop;
     public TapChest tapChest;
 
+
     // Use this for initialization
     void Awake(){
         questionManager = (QuestionManager)questionManager_gameObject.GetComponent(typeof(QuestionManager));
@@ -27,6 +28,7 @@ public class PapyrManager : MonoBehaviour
     }
 
     public void openPapyr(){
+
         this.gameObject.SetActive(true);
         duringQuestions.SetActive(true);
         afterQuestions.SetActive(false);
@@ -43,6 +45,7 @@ public class PapyrManager : MonoBehaviour
 
     }
     public void closePapyr(){
+        questionManager.resetSecondsRemained();
         questionManager.stopCountDown();
         this.gameObject.SetActive(false);
         duringQuestions.SetActive(false);

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class QuestionManager : MonoBehaviour {
 
-    int seconds_remained = 10;
+    int seconds_remained;
     public Text countDown_text;
     public Text question_text;
     public GameObject question_set_gameObject;
@@ -29,7 +29,7 @@ public class QuestionManager : MonoBehaviour {
     }
 
     public void startCountDown(){ 
-        seconds_remained = 10; 
+        seconds_remained = 120-30*question_set.getAttemps(); 
         InvokeRepeating("decreaseCountDown", 1.0f, 1.0f);
     }
     public void stopCountDown(){ CancelInvoke(); }
@@ -61,6 +61,11 @@ public class QuestionManager : MonoBehaviour {
 
     public Status getStatus(){
         return question_set.getStatus();
+    }
+
+    public void resetSecondsRemained(){
+        seconds_remained = 120 - 30 * question_set.getAttemps();
+        countDown_text.text = "" + seconds_remained;
     }
 
 }

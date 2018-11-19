@@ -414,8 +414,6 @@ MonoBehaviour:
   retriable: {fileID: 714483056}
   chestCollider: {fileID: 1488311990}
   chestTop: {fileID: 760755792}
-  initialPosition: {x: 0, y: 0, z: 0}
-  initialRotation: {x: 0, y: 0, z: 0, w: 0}
   tapChest: {fileID: 0}
 --- !u!1001 &105165228
 Prefab:
@@ -3477,6 +3475,7 @@ MonoBehaviour:
   papyrManager: {fileID: 0}
   initialPosition: {x: 0, y: 0, z: 0}
   initialRotation: {x: 0, y: 0, z: 0, w: 0}
+  enabled: 1
 --- !u!65 &1488311993
 BoxCollider:
   m_ObjectHideFlags: 0
