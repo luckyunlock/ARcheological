@@ -43,6 +43,7 @@ using UnityEngine;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Threading;
+using System.Text.RegularExpressions;
 
 public enum ContentMode
 {
@@ -86,9 +87,10 @@ public class ARController : MonoBehaviour
     public bool QuitOnEscOrBack = true;
     public bool AutoStartAR = true;
 
-	//API Addition - Users can check this value to see if the camera is initialised running.
-	//Usage: Used to show 'Please Wait' UIs while the camera is still initialising or markers are being loaded.
-	[HideInInspector]
+
+    //API Addition - Users can check this value to see if the camera is initialised running.
+    //Usage: Used to show 'Please Wait' UIs while the camera is still initialising or markers are being loaded.
+    [HideInInspector]
 	public bool IsRunning { get { return _running; } }
 	
     //
@@ -324,6 +326,7 @@ public class ARController : MonoBehaviour
         ARNativePluginStatic.aruRequestCamera();
         Thread.Sleep(2000);
         #endif
+
 
         InitializeAR ();
     }
@@ -1653,7 +1656,14 @@ public class ARController : MonoBehaviour
         // If there is a logCallback then use that to handle the log message. Otherwise simply
         // print out on the debug console.
         if (logCallback != null) logCallback(msg);
-        else Debug.Log(msg);
+        if (msg.Contains("now visible")){
+            Debug.Log(msg);
+            int s = Int32.Parse(Regex.Match(msg, @"\d+").Value);
+            MarkerManager.f();        
+        }
+
+
+
     }
 
     private void CalculateFPS()

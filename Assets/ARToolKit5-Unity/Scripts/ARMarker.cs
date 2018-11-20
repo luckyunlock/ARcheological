@@ -160,7 +160,7 @@ public class ARMarker : MonoBehaviour
 	
 	public void OnDisable()
 	{
-		//ARController.Log(LogTag + "ARMarker.OnDisable()");
+        //ARController.Log(LogTag + "ARMarker.OnDisable()");
 		Unload();
 	}
 
