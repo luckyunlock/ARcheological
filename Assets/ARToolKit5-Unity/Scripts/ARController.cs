@@ -1656,11 +1656,7 @@ public class ARController : MonoBehaviour
         // If there is a logCallback then use that to handle the log message. Otherwise simply
         // print out on the debug console.
         if (logCallback != null) logCallback(msg);
-        if (msg.Contains("now visible")){
-            Debug.Log(msg);
-            int s = Int32.Parse(Regex.Match(msg, @"\d+").Value);
-            MarkerManager.f();        
-        }
+
 
 
 

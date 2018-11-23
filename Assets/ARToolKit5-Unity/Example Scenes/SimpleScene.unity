@@ -1198,7 +1198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   secondsToRemainVisible: 0
-  eventReceiver: {fileID: 0}
+  eventReceiver: {fileID: 2104090979}
   _markerTag: hiro
 --- !u!1 &465643971
 GameObject:
@@ -3488,7 +3488,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: eca2d86758eb8455793a0db213171045, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: eca2d86758eb8455793a0db213171045, type: 3}
       propertyPath: m_LocalScale.x
@@ -4894,7 +4894,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14558e0cac32b4d9397885aafc0a485f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ARToolKit: {fileID: 1192976668}
+  ARToolKit: {fileID: 0}
   yes: {fileID: 0}
   no: {fileID: 0}
 --- !u!4 &2104090981
