@@ -30,7 +30,7 @@ public class QuestionManager : MonoBehaviour {
 
     public void startCountDown(){ 
         seconds_remained = 120-30*question_set.getAttemps(); 
-        InvokeRepeating("decreaseCountDown", 1.0f, 1.0f);
+        InvokeRepeating("decreaseCountDown", 0.0f, 1.0f);
     }
     public void stopCountDown(){ CancelInvoke(); }
 
@@ -52,11 +52,16 @@ public class QuestionManager : MonoBehaviour {
     }
 
     public void forwardResponse(string opt){
-        currentQuestion = question_set.registerResponse(opt);
-        if (currentQuestion != null)
-            dispayQuestion();
-        else
-            papyrManager.displayResult();
+        if (papyrManager.isOpen){
+            currentQuestion = question_set.registerResponse(opt);
+            if (currentQuestion != null)
+                dispayQuestion();
+            else
+                papyrManager.displayResult();
+        }else{
+            Debug.Log("Impossible to forward the response "+ opt);
+        }
+
     }
 
     public Status getStatus(){

@@ -17,6 +17,7 @@ public class PapyrManager : MonoBehaviour
     public GameObject chestCollider;
     public GameObject chestTop;
     public TapChest tapChest;
+    public bool isOpen= false;
 
 
     // Use this for initialization
@@ -35,6 +36,7 @@ public class PapyrManager : MonoBehaviour
         questionManager.startCountDown();
 
         questionManager.dispayQuestion();
+        isOpen = true;
     }
     public void displayResult(){
         resultText.text = "Your result is:\n" + questionManager.question_set.getCurrentScore();
@@ -45,6 +47,7 @@ public class PapyrManager : MonoBehaviour
 
     }
     public void closePapyr(){
+        isOpen = false;
         questionManager.resetSecondsRemained();
         questionManager.stopCountDown();
         this.gameObject.SetActive(false);
