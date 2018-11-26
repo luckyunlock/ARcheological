@@ -11,9 +11,7 @@ public class PapyrManager : MonoBehaviour
     public Text resultText;
     public QuestionManager questionManager;
 
-    public GameObject success;
     public GameObject fail;
-    public GameObject retriable;
     public GameObject chestCollider;
     public GameObject chestTop;
     public TapChest tapChest;
@@ -54,11 +52,9 @@ public class PapyrManager : MonoBehaviour
         duringQuestions.SetActive(false);
         afterQuestions.SetActive(false);
 
-        success.SetActive(false);
         fail.SetActive(false);
-        retriable.SetActive(false);
+
         if (questionManager.getStatus() == Status.Successed){
-            success.SetActive(true);
             Destroy(chestCollider);
         }
             
@@ -69,7 +65,6 @@ public class PapyrManager : MonoBehaviour
         }
 
         if (questionManager.getStatus() == Status.Tried){
-            retriable.SetActive(true);
             tapChest.closeChest();
         }
     }
