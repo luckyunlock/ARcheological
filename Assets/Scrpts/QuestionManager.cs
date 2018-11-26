@@ -8,6 +8,7 @@ public class QuestionManager : MonoBehaviour {
     int seconds_remained;
     public Text countDown_text;
     public Text question_text;
+    public Text givenAnswer;
     public GameObject question_set_gameObject;
     public QuesiteSet question_set;
     public MyTriple currentQuestion;
@@ -24,11 +25,13 @@ public class QuestionManager : MonoBehaviour {
 
         //Get the question and display it
         currentQuestion = question_set.getCurrentQuestion();
+        givenAnswer.gameObject.SetActive(false);
         dispayQuestion();
 
     }
 
-    public void startCountDown(){ 
+    public void startCountDown(){
+        givenAnswer.gameObject.SetActive(false);
         seconds_remained = 120-30*question_set.getAttemps(); 
         InvokeRepeating("decreaseCountDown", 0.0f, 1.0f);
     }
@@ -54,6 +57,7 @@ public class QuestionManager : MonoBehaviour {
     public void forwardResponse(string opt){
         if (papyrManager.isOpen){
             currentQuestion = question_set.registerResponse(opt);
+            this.modify_givenAnswer(opt);
             if (currentQuestion != null)
                 dispayQuestion();
             else
@@ -73,4 +77,8 @@ public class QuestionManager : MonoBehaviour {
         countDown_text.text = "" + seconds_remained;
     }
 
+    public void modify_givenAnswer(string opt){
+        givenAnswer.text = "You did answer: " + opt;
+        givenAnswer.gameObject.SetActive(true);
+    }
 }

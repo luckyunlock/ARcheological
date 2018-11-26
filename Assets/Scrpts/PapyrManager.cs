@@ -35,6 +35,7 @@ public class PapyrManager : MonoBehaviour
 
         questionManager.dispayQuestion();
         isOpen = true;
+
     }
     public void displayResult(){
         resultText.text = "Your result is:\n" + questionManager.question_set.getCurrentScore();

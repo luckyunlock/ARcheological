@@ -1015,128 +1015,80 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 434ab404e268e4b34b95c72d05bfbe91,
     type: 3}
   m_PrefabInternal: {fileID: 977685582}
---- !u!1 &337556602
+--- !u!1 &330927509
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 337556603}
-  - component: {fileID: 337556606}
-  - component: {fileID: 337556605}
-  - component: {fileID: 337556604}
+  - component: {fileID: 330927510}
+  - component: {fileID: 330927512}
+  - component: {fileID: 330927511}
   m_Layer: 5
-  m_Name: Button-Yes
+  m_Name: givenAnswer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &337556603
+  m_IsActive: 0
+--- !u!224 &330927510
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 337556602}
+  m_GameObject: {fileID: 330927509}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 465643972}
+  m_LocalScale: {x: 1.0000124, y: 1.0000124, z: 1.0000124}
+  m_Children: []
   m_Father: {fileID: 1918195792}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 180, y: -220}
-  m_SizeDelta: {x: 180, y: 100}
+  m_AnchoredPosition: {x: 0, y: -228}
+  m_SizeDelta: {x: 550, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &337556604
+--- !u!114 &330927511
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 337556602}
+  m_GameObject: {fileID: 330927509}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 337556605}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1669707317}
-        m_MethodName: forwardResponse
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: true
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
---- !u!114 &337556605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 337556602}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &337556606
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 5
+    m_MaxSize: 50
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'You did answer: '
+--- !u!222 &330927512
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 337556602}
+  m_GameObject: {fileID: 330927509}
   m_CullTransparentMesh: 0
 --- !u!1 &398190063
 GameObject:
@@ -1163,7 +1115,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1705976947}
   m_Father: {fileID: 197190001}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1179,8 +1132,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   secondsToRemainVisible: 0
-  eventReceiver: {fileID: 0}
-  _markerTag: vert
+  eventReceiver: {fileID: 1705976946}
+  _markerTag: false
 --- !u!1001 &401699197
 Prefab:
   m_ObjectHideFlags: 0
@@ -1340,81 +1293,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 409264544}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &430844576
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 430844577}
-  - component: {fileID: 430844579}
-  - component: {fileID: 430844578}
-  m_Layer: 5
-  m_Name: Text-No
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &430844577
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 430844576}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1795643568}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &430844578
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 430844576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 70
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 7
-    m_MaxSize: 70
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: No
---- !u!222 &430844579
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 430844576}
-  m_CullTransparentMesh: 0
 --- !u!1 &446854238
 GameObject:
   m_ObjectHideFlags: 0
@@ -1462,81 +1340,49 @@ MonoBehaviour:
   secondsToRemainVisible: 0
   eventReceiver: {fileID: 0}
   _markerTag: hiro
---- !u!1 &465643971
+--- !u!1 &483568834
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 465643972}
-  - component: {fileID: 465643974}
-  - component: {fileID: 465643973}
-  m_Layer: 5
-  m_Name: Text-Yes
+  - component: {fileID: 483568835}
+  - component: {fileID: 483568836}
+  m_Layer: 8
+  m_Name: Manager-pass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &465643972
-RectTransform:
+--- !u!4 &483568835
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 465643971}
+  m_GameObject: {fileID: 483568834}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 337556603}
+  m_Father: {fileID: 2024800719}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &465643973
+--- !u!114 &483568836
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 465643971}
+  m_GameObject: {fileID: 483568834}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 7bfd280a7ca6d4aab931b739d12479e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 70
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 70
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Yes
---- !u!222 &465643974
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 465643971}
-  m_CullTransparentMesh: 0
+  value: pass
+  questionManager_gameObject: {fileID: 1669707315}
+  questionManager: {fileID: 0}
 --- !u!1 &513351697
 GameObject:
   m_ObjectHideFlags: 0
@@ -1840,129 +1686,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 42d09874fdcba43f59a35cad3855372f,
     type: 3}
   m_PrefabInternal: {fileID: 1832495745}
---- !u!1 &719627935
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 719627936}
-  - component: {fileID: 719627939}
-  - component: {fileID: 719627938}
-  - component: {fileID: 719627937}
-  m_Layer: 5
-  m_Name: Button-Pass
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &719627936
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 719627935}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1944087255}
-  m_Father: {fileID: 1918195792}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -220.00002}
-  m_SizeDelta: {x: 180, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &719627937
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 719627935}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 719627938}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1669707317}
-        m_MethodName: forwardResponse
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: pass
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
---- !u!114 &719627938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 719627935}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &719627939
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 719627935}
-  m_CullTransparentMesh: 0
 --- !u!1 &749452074
 GameObject:
   m_ObjectHideFlags: 0
@@ -2685,7 +2408,6 @@ GameObject:
   - component: {fileID: 1192976671}
   - component: {fileID: 1192976670}
   - component: {fileID: 1192976669}
-  - component: {fileID: 1192976672}
   - component: {fileID: 1192976673}
   - component: {fileID: 1192976675}
   - component: {fileID: 1192976674}
@@ -2948,192 +2670,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1192976672
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1192976668}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ed68815202b64d4c956d71c0f176088, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MarkerType: 0
-  Tag: kaije
-  PatternFilenameIndex: 1
-  PatternFilename: patt.kanji
-  PatternContents: " 214 225 240 225 214 240 216 204 214 227 181 192 198 192 181 192\n
-    240 240 240 240 240 240 225 232 240 240 240 240 240 240 240 236\n 240 240 240
-    240 240 240  75 128 220 240 240 240 240 240 240 240\n 240 240 240 240 240 240
-    106  53 240 240 240 240 240 240 240 237\n 240 240 240 240 240 238 118  31 240
-    240 240 240 240 240 240 234\n 240 240 240 240 240 240  74  49 207 240 240 240
-    240 240 240 240\n 240 240 240 240 240 240  53  54 177 240 240 240 240 240 240
-    240\n 240 240 240 240 240 240  64  31 130 240 240 240 240 240 240 219\n 240 240
-    240 240 240 180  37  57  78 228 240 240 240 240 240 240\n 240 240 240 240 240
-    118  62 157  36 185 240 240 240 240 240 231\n 240 240 240 240 240  82  65 225
-    \ 67  80 230 240 240 240 240 217\n 240 240 240 225  53  76 225 240 156  62 158
-    240 240 240 240 226\n 240 240 199  61   9 111 235 240 240 104  58 174 228 240
-    240 240\n 240 142  64  26  92 227 240 240 240 229  93  64 170 226 238 216\n  90
-    \ 26  12 156 240 240 240 240 240 240 204  95  30 117 192 200\n 156  16 195 233
-    235 240 236 240 238 239 240 186  93  53 120 237\n 214 226 240 225 212 240 216
-    204 212 226 181 192 198 192 185 194\n 240 240 240 240 240 240 227 232 240 240
-    240 240 240 240 240 238\n 240 240 240 240 240 240  95 138 225 240 240 240 240
-    240 240 240\n 240 240 240 240 240 240 108  59 240 240 240 240 240 240 240 237\n
-    240 240 240 240 240 238 118  31 240 240 240 240 240 240 240 234\n 240 240 240
-    240 240 240  83  47 207 240 240 240 240 240 240 240\n 240 240 240 240 240 240
-    \ 56  49 177 240 240 240 240 240 240 240\n 240 240 240 240 240 240  73  41 130
-    240 240 240 240 240 240 222\n 240 240 240 240 240 185  46  49  86 230 240 240
-    240 240 240 240\n 240 240 240 240 240 118  58 165  45 192 240 240 240 240 240
-    234\n 240 240 240 240 240  91  63 222  74  82 240 240 240 240 240 222\n 240 240
-    240 226  66  86 225 240 158  63 162 240 240 240 240 228\n 240 240 202  76  11
-    103 235 240 234  91  49 174 228 240 240 240\n 240 142  68  16  91 226 240 240
-    240 228  96  74 178 233 239 222\n  90  26   4 150 240 240 240 240 240 240 213
-    109  46 133 204 213\n 156  14 195 234 236 240 237 240 239 240 240 192 106  57
-    125 238\n 214 226 240 225 212 240 216 204 214 227 181 192 198 192 184 192\n 240
-    240 240 240 240 240 226 232 240 240 240 240 240 240 240 236\n 240 240 240 240
-    240 240  85 134 220 240 240 240 240 240 240 240\n 240 240 240 240 240 240 107
-    \ 58 240 240 240 240 240 240 240 237\n 240 240 240 240 240 238 118  32 240 240
-    240 240 240 240 240 234\n 240 240 240 240 240 240  87  60 210 240 240 240 240
-    240 240 240\n 240 240 240 240 240 240  58  58 178 240 240 240 240 240 240 240\n
-    240 240 240 240 240 240  73  31 130 240 240 240 240 240 240 219\n 240 240 240
-    240 240 185  46  59  86 228 240 240 240 240 240 240\n 240 240 240 240 240 118
-    \ 62 168  41 186 240 240 240 240 240 231\n 240 240 240 240 240  90  65 225  60
-    \ 92 235 240 240 240 240 219\n 240 240 240 225  53  82 225 240 146  63 163 240
-    240 240 240 228\n 240 240 198  61   5 103 235 240 234 102  58 175 232 240 240
-    240\n 240 134  54  13  91 226 240 240 240 229  96  68 188 238 239 222\n  90  15
-    \  3 150 240 240 240 240 240 240 213 105  48 134 204 213\n 156  14 195 233 236
-    240 237 240 239 239 240 192 106  57 125 238\n\n 192 236 240 237 234 240 240 219
-    240 231 217 226 240 216 200 237\n 181 240 240 240 240 240 240 240 240 240 240
-    240 240 238 192 120\n 192 240 240 240 240 240 240 240 240 240 240 240 240 226
-    117  53\n 198 240 240 240 240 240 240 240 240 240 240 240 228 170  30  93\n 192
-    240 240 240 240 240 240 240 240 240 240 240 174  64  95 186\n 181 240 240 240
-    240 240 240 240 240 240 230 158  58  93 204 240\n 227 240 240 240 240 240 240
-    240 228 185  80  62 104 229 240 239\n 214 240 220 240 240 207 177 130  78  36
-    \ 67 156 240 240 240 238\n 204 232 128  53  31  49  54  31  57 157 225 240 240
-    240 240 240\n 216 225  75 106 118  74  53  64  37  62  65 225 235 240 240 236\n
-    240 240 240 240 238 240 240 240 180 118  82  76 111 227 240 240\n 214 240 240
-    240 240 240 240 240 240 240 240  53   9  92 240 235\n 225 240 240 240 240 240
-    240 240 240 240 240 225  61  26 156 233\n 240 240 240 240 240 240 240 240 240
-    240 240 240 199  64  12 195\n 225 240 240 240 240 240 240 240 240 240 240 240
-    240 142  26  16\n 214 240 240 240 240 240 240 240 240 240 240 240 240 240  90
-    156\n 194 238 240 237 234 240 240 222 240 234 222 228 240 222 213 238\n 185 240
-    240 240 240 240 240 240 240 240 240 240 240 239 204 125\n 192 240 240 240 240
-    240 240 240 240 240 240 240 240 233 133  57\n 198 240 240 240 240 240 240 240
-    240 240 240 240 228 178  46 106\n 192 240 240 240 240 240 240 240 240 240 240
-    240 174  74 109 192\n 181 240 240 240 240 240 240 240 240 240 240 162  49  96
-    213 240\n 226 240 240 240 240 240 240 240 230 192  82  63  91 228 240 240\n 212
-    240 225 240 240 207 177 130  86  45  74 158 234 240 240 239\n 204 232 138  59
-    \ 31  47  49  41  49 165 222 240 240 240 240 240\n 216 227  95 108 118  83  56
-    \ 73  46  58  63 225 235 240 240 237\n 240 240 240 240 238 240 240 240 185 118
-    \ 91  86 103 226 240 240\n 212 240 240 240 240 240 240 240 240 240 240  66  11
-    \ 91 240 236\n 225 240 240 240 240 240 240 240 240 240 240 226  76  16 150 234\n
-    240 240 240 240 240 240 240 240 240 240 240 240 202  68   4 195\n 226 240 240
-    240 240 240 240 240 240 240 240 240 240 142  26  14\n 214 240 240 240 240 240
-    240 240 240 240 240 240 240 240  90 156\n 192 236 240 237 234 240 240 219 240
-    231 219 228 240 222 213 238\n 184 240 240 240 240 240 240 240 240 240 240 240
-    240 239 204 125\n 192 240 240 240 240 240 240 240 240 240 240 240 240 238 134
-    \ 57\n 198 240 240 240 240 240 240 240 240 240 240 240 232 188  48 106\n 192 240
-    240 240 240 240 240 240 240 240 240 240 175  68 105 192\n 181 240 240 240 240
-    240 240 240 240 240 235 163  58  96 213 240\n 227 240 240 240 240 240 240 240
-    228 186  92  63 102 229 240 239\n 214 240 220 240 240 210 178 130  86  41  60
-    146 234 240 240 239\n 204 232 134  58  32  60  58  31  59 168 225 240 240 240
-    240 240\n 216 226  85 107 118  87  58  73  46  62  65 225 235 240 240 237\n 240
-    240 240 240 238 240 240 240 185 118  90  82 103 226 240 240\n 212 240 240 240
-    240 240 240 240 240 240 240  53   5  91 240 236\n 225 240 240 240 240 240 240
-    240 240 240 240 225  61  13 150 233\n 240 240 240 240 240 240 240 240 240 240
-    240 240 198  54   3 195\n 226 240 240 240 240 240 240 240 240 240 240 240 240
-    134  15  14\n 214 240 240 240 240 240 240 240 240 240 240 240 240 240  90 156\n\n
-    237 120  53  93 186 240 239 238 240 236 240 235 233 195  16 156\n 200 192 117
-    \ 30  95 204 240 240 240 240 240 240 156  12  26  90\n 216 238 226 170  64  93
-    229 240 240 240 227  92  26  64 142 240\n 240 240 240 228 174  58 104 240 240
-    235 111   9  61 199 240 240\n 226 240 240 240 240 158  62 156 240 225  76  53
-    225 240 240 240\n 217 240 240 240 240 230  80  67 225  65  82 240 240 240 240
-    240\n 231 240 240 240 240 240 185  36 157  62 118 240 240 240 240 240\n 240 240
-    240 240 240 240 228  78  57  37 180 240 240 240 240 240\n 219 240 240 240 240
-    240 240 130  31  64 240 240 240 240 240 240\n 240 240 240 240 240 240 240 177
-    \ 54  53 240 240 240 240 240 240\n 240 240 240 240 240 240 240 207  49  74 240
-    240 240 240 240 240\n 234 240 240 240 240 240 240 240  31 118 238 240 240 240
-    240 240\n 237 240 240 240 240 240 240 240  53 106 240 240 240 240 240 240\n 240
-    240 240 240 240 240 240 220 128  75 240 240 240 240 240 240\n 236 240 240 240
-    240 240 240 240 232 225 240 240 240 240 240 240\n 192 181 192 198 192 181 227
-    214 204 216 240 214 225 240 225 214\n 238 125  57 106 192 240 240 239 240 237
-    240 236 234 195  14 156\n 213 204 133  46 109 213 240 240 240 240 240 240 150
-    \  4  26  90\n 222 239 233 178  74  96 228 240 240 240 226  91  16  68 142 240\n
-    240 240 240 228 174  49  91 234 240 235 103  11  76 202 240 240\n 228 240 240
-    240 240 162  63 158 240 225  86  66 226 240 240 240\n 222 240 240 240 240 240
-    \ 82  74 222  63  91 240 240 240 240 240\n 234 240 240 240 240 240 192  45 165
-    \ 58 118 240 240 240 240 240\n 240 240 240 240 240 240 230  86  49  46 185 240
-    240 240 240 240\n 222 240 240 240 240 240 240 130  41  73 240 240 240 240 240
-    240\n 240 240 240 240 240 240 240 177  49  56 240 240 240 240 240 240\n 240 240
-    240 240 240 240 240 207  47  83 240 240 240 240 240 240\n 234 240 240 240 240
-    240 240 240  31 118 238 240 240 240 240 240\n 237 240 240 240 240 240 240 240
-    \ 59 108 240 240 240 240 240 240\n 240 240 240 240 240 240 240 225 138  95 240
-    240 240 240 240 240\n 238 240 240 240 240 240 240 240 232 227 240 240 240 240
-    240 240\n 194 185 192 198 192 181 226 212 204 216 240 212 225 240 226 214\n 238
-    125  57 106 192 240 239 239 240 237 240 236 233 195  14 156\n 213 204 134  48
-    105 213 240 240 240 240 240 240 150   3  15  90\n 222 239 238 188  68  96 229
-    240 240 240 226  91  13  54 134 240\n 240 240 240 232 175  58 102 234 240 235
-    103   5  61 198 240 240\n 228 240 240 240 240 163  63 146 240 225  82  53 225
-    240 240 240\n 219 240 240 240 240 235  92  60 225  65  90 240 240 240 240 240\n
-    231 240 240 240 240 240 186  41 168  62 118 240 240 240 240 240\n 240 240 240
-    240 240 240 228  86  59  46 185 240 240 240 240 240\n 219 240 240 240 240 240
-    240 130  31  73 240 240 240 240 240 240\n 240 240 240 240 240 240 240 178  58
-    \ 58 240 240 240 240 240 240\n 240 240 240 240 240 240 240 210  60  87 240 240
-    240 240 240 240\n 234 240 240 240 240 240 240 240  32 118 238 240 240 240 240
-    240\n 237 240 240 240 240 240 240 240  58 107 240 240 240 240 240 240\n 240 240
-    240 240 240 240 240 220 134  85 240 240 240 240 240 240\n 236 240 240 240 240
-    240 240 240 232 226 240 240 240 240 240 240\n 192 184 192 198 192 181 227 214
-    204 216 240 212 225 240 226 214\n\n 156  90 240 240 240 240 240 240 240 240 240
-    240 240 240 240 214\n  16  26 142 240 240 240 240 240 240 240 240 240 240 240
-    240 225\n 195  12  64 199 240 240 240 240 240 240 240 240 240 240 240 240\n 233
-    156  26  61 225 240 240 240 240 240 240 240 240 240 240 225\n 235 240  92   9
-    \ 53 240 240 240 240 240 240 240 240 240 240 214\n 240 240 227 111  76  82 118
-    180 240 240 240 238 240 240 240 240\n 236 240 240 235 225  65  62  37  64  53
-    \ 74 118 106  75 225 216\n 240 240 240 240 240 225 157  57  31  54  49  31  53
-    128 232 204\n 238 240 240 240 156  67  36  78 130 177 207 240 240 220 240 214\n
-    239 240 229 104  62  80 185 228 240 240 240 240 240 240 240 227\n 240 204  93
-    \ 58 158 230 240 240 240 240 240 240 240 240 240 181\n 186  95  64 174 240 240
-    240 240 240 240 240 240 240 240 240 192\n  93  30 170 228 240 240 240 240 240
-    240 240 240 240 240 240 198\n  53 117 226 240 240 240 240 240 240 240 240 240
-    240 240 240 192\n 120 192 238 240 240 240 240 240 240 240 240 240 240 240 240
-    181\n 237 200 216 240 226 217 231 240 219 240 240 234 237 240 236 192\n 156  90
-    240 240 240 240 240 240 240 240 240 240 240 240 240 214\n  14  26 142 240 240
-    240 240 240 240 240 240 240 240 240 240 226\n 195   4  68 202 240 240 240 240
-    240 240 240 240 240 240 240 240\n 234 150  16  76 226 240 240 240 240 240 240
-    240 240 240 240 225\n 236 240  91  11  66 240 240 240 240 240 240 240 240 240
-    240 212\n 240 240 226 103  86  91 118 185 240 240 240 238 240 240 240 240\n 237
-    240 240 235 225  63  58  46  73  56  83 118 108  95 227 216\n 240 240 240 240
-    240 222 165  49  41  49  47  31  59 138 232 204\n 239 240 240 234 158  74  45
-    \ 86 130 177 207 240 240 225 240 212\n 240 240 228  91  63  82 192 230 240 240
-    240 240 240 240 240 226\n 240 213  96  49 162 240 240 240 240 240 240 240 240
-    240 240 181\n 192 109  74 174 240 240 240 240 240 240 240 240 240 240 240 192\n
-    106  46 178 228 240 240 240 240 240 240 240 240 240 240 240 198\n  57 133 233
-    240 240 240 240 240 240 240 240 240 240 240 240 192\n 125 204 239 240 240 240
-    240 240 240 240 240 240 240 240 240 185\n 238 213 222 240 228 222 234 240 222
-    240 240 234 237 240 238 194\n 156  90 240 240 240 240 240 240 240 240 240 240
-    240 240 240 214\n  14  15 134 240 240 240 240 240 240 240 240 240 240 240 240
-    226\n 195   3  54 198 240 240 240 240 240 240 240 240 240 240 240 240\n 233 150
-    \ 13  61 225 240 240 240 240 240 240 240 240 240 240 225\n 236 240  91   5  53
-    240 240 240 240 240 240 240 240 240 240 212\n 240 240 226 103  82  90 118 185
-    240 240 240 238 240 240 240 240\n 237 240 240 235 225  65  62  46  73  58  87
-    118 107  85 226 216\n 240 240 240 240 240 225 168  59  31  58  60  32  58 134
-    232 204\n 239 240 240 234 146  60  41  86 130 178 210 240 240 220 240 214\n 239
-    240 229 102  63  92 186 228 240 240 240 240 240 240 240 227\n 240 213  96  58
-    163 235 240 240 240 240 240 240 240 240 240 181\n 192 105  68 175 240 240 240
-    240 240 240 240 240 240 240 240 192\n 106  48 188 232 240 240 240 240 240 240
-    240 240 240 240 240 198\n  57 134 238 240 240 240 240 240 240 240 240 240 240
-    240 240 192\n 125 204 239 240 240 240 240 240 240 240 240 240 240 240 240 184\n
-    238 213 222 240 228 219 231 240 219 240 240 234 237 240 236 192\n\n"
-  PatternWidth: 0.08
-  BarcodeID: 0
-  MultiConfigFile: 
-  NFTDataName: 
-  currentUseContPoseEstimation: 0
-  currentFiltered: 0
-  currentFilterSampleRate: 30
-  currentFilterCutoffFreq: 15
-  currentNFTScale: 1
 --- !u!114 &1192976673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3330,169 +2866,166 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MarkerType: 0
-  Tag: false
-  PatternFilenameIndex: 2
-  PatternFilename: pattern-false
+  Tag: true
+  PatternFilenameIndex: 4
+  PatternFilename: pattern-true
   PatternContents: "  0   0   0   0   0   0   0   0   0   0 175 255 255 255 255   0\n
     \ 0   0   0   0   0   0   0   0   0   0 175 255 255 255 255   0\n  0   0   0   0
     \  0   0   0   0   0   0 175 255 255 255 255   0\n  0   0   0   0   0   0   0
     \  0   0   0 175 255 255 255 255   0\n  0   0   0   0   0   0   0   0   0   0
-    175 255 255 255 255   0\n201 201 201 201 201  42   0   0   0   0  36  53  53  53
-    \ 53   0\n255 255 255 255 255  53   0   0   0   0   0   0   0   0   0   0\n255
-    255 255 255 255  53   0   0   0   0   0   0   0   0   0   0\n255 255 255 255 255
-    \ 53   0   0   0   0   0   0   0   0   0   0\n255 255 255 255 255  53   0   0
-    \  0   0   0   0   0   0   0   0\n 79  79  79  79  79  16   0   0   0   0 120
-    175 175 175 175   0\n  0   0   0   0   0   0   0   0   0   0 175 255 255 255 255
-    \  0\n  0   0   0   0   0   0   0   0   0   0 175 255 255 255 255   0\n  0   0
-    \  0   0   0   0   0   0   0   0 175 255 255 255 255   0\n  0   0   0   0   0
-    \  0   0   0   0   0 175 255 255 255 255   0\n  0   0   0   0   0   0   0   0
-    \  0   0   0   0   0   0   0   0\n  0   0   0   0   0   0   0   0   0   0 175
-    255 255 255 255   0\n  0   0   0   0   0   0   0   0   0   0 175 255 255 255 255
-    \  0\n  0   0   0   0   0   0   0   0   0   0 175 255 255 255 255   0\n  0   0
-    \  0   0   0   0   0   0   0   0 175 255 255 255 255   0\n  0   0   0   0   0
-    \  0   0   0   0   0 175 255 255 255 255   0\n201 201 201 201 201  42   0   0
-    \  0   0  36  53  53  53  53   0\n255 255 255 255 255  53   0   0   0   0   0
-    \  0   0   0   0   0\n255 255 255 255 255  53   0   0   0   0   0   0   0   0
-    \  0   0\n255 255 255 255 255  53   0   0   0   0   0   0   0   0   0   0\n255
-    255 255 255 255  53   0   0   0   0   0   0   0   0   0   0\n 79  79  79  79  79
-    \ 16   0   0   0   0 120 175 175 175 175   0\n  0   0   0   0   0   0   0   0
-    \  0   0 175 255 255 255 255   0\n  0   0   0   0   0   0   0   0   0   0 175
-    255 255 255 255   0\n  0   0   0   0   0   0   0   0   0   0 175 255 255 255 255
-    \  0\n  0   0   0   0   0   0   0   0   0   0 175 255 255 255 255   0\n  0   0
-    \  0   0   0   0   0   0   0   0   0   0   0   0   0   0\n  0   0   0   0   0
-    \  0   0   0   0   0 175 255 255 255 255   0\n  0   0   0   0   0   0   0   0
-    \  0   0 175 255 255 255 255   0\n  0   0   0   0   0   0   0   0   0   0 175
-    255 255 255 255   0\n  0   0   0   0   0   0   0   0   0   0 175 255 255 255 255
-    \  0\n  0   0   0   0   0   0   0   0   0   0 175 255 255 255 255   0\n201 201
-    201 201 201  42   0   0   0   0  36  53  53  53  53   0\n255 255 255 255 255  53
-    \  0   0   0   0   0   0   0   0   0   0\n255 255 255 255 255  53   0   0   0
-    \  0   0   0   0   0   0   0\n255 255 255 255 255  53   0   0   0   0   0   0
-    \  0   0   0   0\n255 255 255 255 255  53   0   0   0   0   0   0   0   0   0
-    \  0\n 79  79  79  79  79  16   0   0   0   0 120 175 175 175 175   0\n  0   0
-    \  0   0   0   0   0   0   0   0 175 255 255 255 255   0\n  0   0   0   0   0
-    \  0   0   0   0   0 175 255 255 255 255   0\n  0   0   0   0   0   0   0   0
-    \  0   0 175 255 255 255 255   0\n  0   0   0   0   0   0   0   0   0   0 175
-    255 255 255 255   0\n  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-    \  0\n\n128 127 127 127 127  25   0   0   0   0 177 255 255 255 255 255\n255 255
-    255 255 255  50   0   0   0   0 180 255 255 255 255 255\n255 255 255 255 255  50
-    \  0   0   0   0 180 255 255 255 255 255\n255 255 255 255 255  50   0   0   0
-    \  0 180 255 255 255 255 255\n255 255 255 255 255  50   0   0   0   0 180 255
-    255 255 255 255\n180 180 180 180 180  36   0   0   0   0 127 180 180 180 180 179\n
-    \ 0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0\n  0   0   0   0
-    \  0   0   0   0   0   0   0   0   0   0   0   0\n  0   0   0   0   0   0   0
+    175 255 255 255 255   0\n201 201 201 201 201 201 201 201 201 201 238 255 255 255
+    255   0\n255 255 255 255 255 255 255 255 255 255 255 255 255 255 255   0\n255
+    255 255 255 255 255 255 255 255 255 255 255 255 255 255   0\n255 255 255 255 255
+    255 255 255 255 255 255 255 255 255 255   0\n255 255 255 255 255 255 255 255 255
+    255 255 255 255 255 255   0\n 79  79  79  79  79 217 255 255 255 255 255 255 255
+    255 255   0\n  0   0   0   0   0 201 255 255 255 255 255 255 255 255 255   0\n
+    \ 0   0   0   0   0 201 255 255 255 255 255 255 255 255 255   0\n  0   0   0   0
+    \  0 201 255 255 255 255 255 255 255 255 255   0\n  0   0   0   0   0 201 255
+    255 255 255 255 255 255 255 255   0\n  0   0   0   0   0   0   0   0   0   0   0
+    \  0   0   0   0   0\n  0   0   0   0   0   0   0   0   0   0 175 255 255 255
+    255   0\n  0   0   0   0   0   0   0   0   0   0 175 255 255 255 255   0\n  0
+    \  0   0   0   0   0   0   0   0   0 175 255 255 255 255   0\n  0   0   0   0
+    \  0   0   0   0   0   0 175 255 255 255 255   0\n  0   0   0   0   0   0   0
+    \  0   0   0 175 255 255 255 255   0\n201 201 201 201 201 201 201 201 201 201
+    238 255 255 255 255   0\n255 255 255 255 255 255 255 255 255 255 255 255 255 255
+    255   0\n255 255 255 255 255 255 255 255 255 255 255 255 255 255 255   0\n255
+    255 255 255 255 255 255 255 255 255 255 255 255 255 255   0\n255 255 255 255 255
+    255 255 255 255 255 255 255 255 255 255   0\n 79  79  79  79  79 217 255 255 255
+    255 255 255 255 255 255   0\n  0   0   0   0   0 201 255 255 255 255 255 255 255
+    255 255   0\n  0   0   0   0   0 201 255 255 255 255 255 255 255 255 255   0\n
+    \ 0   0   0   0   0 201 255 255 255 255 255 255 255 255 255   0\n  0   0   0   0
+    \  0 201 255 255 255 255 255 255 255 255 255   0\n  0   0   0   0   0   0   0
     \  0   0   0   0   0   0   0   0   0\n  0   0   0   0   0   0   0   0   0   0
-    \  0   0   0   0   0   0\n  0   0   0   0   0  40  50  50  50  50  15   0   0
-    \  0   0   0\n  0   0   0   0   0 204 255 255 255 255  75   0   0   0   0   0\n
-    \ 0   0   0   0   0 204 255 255 255 255  75   0   0   0   0   0\n  0   0   0   0
-    \  0 204 255 255 255 255  75   0   0   0   0   0\n  0   0   0   0   0 204 255
+    175 255 255 255 255   0\n  0   0   0   0   0   0   0   0   0   0 175 255 255 255
+    255   0\n  0   0   0   0   0   0   0   0   0   0 175 255 255 255 255   0\n  0
+    \  0   0   0   0   0   0   0   0   0 175 255 255 255 255   0\n  0   0   0   0
+    \  0   0   0   0   0   0 175 255 255 255 255   0\n201 201 201 201 201 201 201
+    201 201 201 238 255 255 255 255   0\n255 255 255 255 255 255 255 255 255 255 255
+    255 255 255 255   0\n255 255 255 255 255 255 255 255 255 255 255 255 255 255 255
+    \  0\n255 255 255 255 255 255 255 255 255 255 255 255 255 255 255   0\n255 255
+    255 255 255 255 255 255 255 255 255 255 255 255 255   0\n 79  79  79  79  79 217
+    255 255 255 255 255 255 255 255 255   0\n  0   0   0   0   0 201 255 255 255 255
+    255 255 255 255 255   0\n  0   0   0   0   0 201 255 255 255 255 255 255 255 255
+    255   0\n  0   0   0   0   0 201 255 255 255 255 255 255 255 255 255   0\n  0
+    \  0   0   0   0 201 255 255 255 255 255 255 255 255 255   0\n  0   0   0   0
+    \  0   0   0   0   0   0   0   0   0   0   0   0\n\n128 127 127 127 127 127 127
+    127 127 127 215 255 255 255 255 255\n255 255 255 255 255 255 255 255 255 255 255
+    255 255 255 255 255\n255 255 255 255 255 255 255 255 255 255 255 255 255 255 255
+    255\n255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255\n255 255
+    255 255 255 255 255 255 255 255 255 255 255 255 255 255\n180 180 180 180 180 240
+    255 255 255 255 255 255 255 255 255 255\n  0   0   0   0   0 204 255 255 255 255
+    255 255 255 255 255 255\n  0   0   0   0   0 204 255 255 255 255 255 255 255 255
+    255 255\n  0   0   0   0   0 204 255 255 255 255 255 255 255 255 255 255\n  0
+    \  0   0   0   0 204 255 255 255 255 255 255 255 255 255 255\n  0   0   0   0
+    \  0 204 255 255 255 255 219 204 204 204 204 203\n  0   0   0   0   0 204 255
     255 255 255  75   0   0   0   0   0\n  0   0   0   0   0 204 255 255 255 255  75
-    \  0   0   0   0   0\n128 127 127 127 127  25   0   0   0   0 177 255 255 255
-    255 255\n255 255 255 255 255  50   0   0   0   0 180 255 255 255 255 255\n255
-    255 255 255 255  50   0   0   0   0 180 255 255 255 255 255\n255 255 255 255 255
-    \ 50   0   0   0   0 180 255 255 255 255 255\n255 255 255 255 255  50   0   0
-    \  0   0 180 255 255 255 255 255\n180 180 180 180 180  36   0   0   0   0 127
-    180 180 180 180 179\n  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-    \  0\n  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0\n  0   0
-    \  0   0   0   0   0   0   0   0   0   0   0   0   0   0\n  0   0   0   0   0
-    \  0   0   0   0   0   0   0   0   0   0   0\n  0   0   0   0   0  40  50  50
-    \ 50  50  15   0   0   0   0   0\n  0   0   0   0   0 204 255 255 255 255  75
     \  0   0   0   0   0\n  0   0   0   0   0 204 255 255 255 255  75   0   0   0
     \  0   0\n  0   0   0   0   0 204 255 255 255 255  75   0   0   0   0   0\n  0
-    \  0   0   0   0 204 255 255 255 255  75   0   0   0   0   0\n  0   0   0   0
-    \  0 204 255 255 255 255  75   0   0   0   0   0\n128 127 127 127 127  25   0
-    \  0   0   0 177 255 255 255 255 255\n255 255 255 255 255  50   0   0   0   0
-    180 255 255 255 255 255\n255 255 255 255 255  50   0   0   0   0 180 255 255 255
-    255 255\n255 255 255 255 255  50   0   0   0   0 180 255 255 255 255 255\n255
-    255 255 255 255  50   0   0   0   0 180 255 255 255 255 255\n180 180 180 180 180
-    \ 36   0   0   0   0 127 180 180 180 180 179\n  0   0   0   0   0   0   0   0
-    \  0   0   0   0   0   0   0   0\n  0   0   0   0   0   0   0   0   0   0   0
-    \  0   0   0   0   0\n  0   0   0   0   0   0   0   0   0   0   0   0   0   0
-    \  0   0\n  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0\n  0
-    \  0   0   0   0  40  50  50  50  50  15   0   0   0   0   0\n  0   0   0   0
-    \  0 204 255 255 255 255  75   0   0   0   0   0\n  0   0   0   0   0 204 255
+    \  0   0   0   0 204 255 255 255 255  75   0   0   0   0   0\n128 127 127 127
+    127 127 127 127 127 127 215 255 255 255 255 255\n255 255 255 255 255 255 255 255
+    255 255 255 255 255 255 255 255\n255 255 255 255 255 255 255 255 255 255 255 255
+    255 255 255 255\n255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255\n255
+    255 255 255 255 255 255 255 255 255 255 255 255 255 255 255\n180 180 180 180 180
+    240 255 255 255 255 255 255 255 255 255 255\n  0   0   0   0   0 204 255 255 255
+    255 255 255 255 255 255 255\n  0   0   0   0   0 204 255 255 255 255 255 255 255
+    255 255 255\n  0   0   0   0   0 204 255 255 255 255 255 255 255 255 255 255\n
+    \ 0   0   0   0   0 204 255 255 255 255 255 255 255 255 255 255\n  0   0   0   0
+    \  0 204 255 255 255 255 219 204 204 204 204 203\n  0   0   0   0   0 204 255
     255 255 255  75   0   0   0   0   0\n  0   0   0   0   0 204 255 255 255 255  75
     \  0   0   0   0   0\n  0   0   0   0   0 204 255 255 255 255  75   0   0   0
-    \  0   0\n  0   0   0   0   0 204 255 255 255 255  75   0   0   0   0   0\n\n153
-    184 184 184 184  94   0   0   0   0  98 141 141 141 141  60\n255 255 255 255 255
-    180   0   0   0   0   0   0   0   0   0   0\n255 255 255 255 255 180   0   0   0
-    \  0   0   0   0   0   0   0\n255 255 255 255 255 180   0   0   0   0   0   0
-    \  0   0   0   0\n255 255 255 255 255 180   0   0   0   0   0   0   0   0   0
-    \  0\n180 180 180 180 180 127   0   0   0   0  15  75  75  75  75  75\n  0   0
-    \  0   0   0   0   0   0   0   0  50 255 255 255 255 255\n  0   0   0   0   0
-    \  0   0   0   0   0  50 255 255 255 255 255\n  0   0   0   0   0   0   0   0
-    \  0   0  50 255 255 255 255 255\n  0   0   0   0   0   0   0   0   0   0  50
-    255 255 255 255 255\n 23  50  50  50  50  36   0   0   0   0  40 204 204 204 204
-    204\n114 255 255 255 255 180   0   0   0   0   0   0   0   0   0   0\n114 255
-    255 255 255 180   0   0   0   0   0   0   0   0   0   0\n114 255 255 255 255 180
-    \  0   0   0   0   0   0   0   0   0   0\n114 255 255 255 255 180   0   0   0
+    \  0   0\n  0   0   0   0   0 204 255 255 255 255  75   0   0   0   0   0\n  0
+    \  0   0   0   0 204 255 255 255 255  75   0   0   0   0   0\n128 127 127 127
+    127 127 127 127 127 127 215 255 255 255 255 255\n255 255 255 255 255 255 255 255
+    255 255 255 255 255 255 255 255\n255 255 255 255 255 255 255 255 255 255 255 255
+    255 255 255 255\n255 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255\n255
+    255 255 255 255 255 255 255 255 255 255 255 255 255 255 255\n180 180 180 180 180
+    240 255 255 255 255 255 255 255 255 255 255\n  0   0   0   0   0 204 255 255 255
+    255 255 255 255 255 255 255\n  0   0   0   0   0 204 255 255 255 255 255 255 255
+    255 255 255\n  0   0   0   0   0 204 255 255 255 255 255 255 255 255 255 255\n
+    \ 0   0   0   0   0 204 255 255 255 255 255 255 255 255 255 255\n  0   0   0   0
+    \  0 204 255 255 255 255 219 204 204 204 204 203\n  0   0   0   0   0 204 255
+    255 255 255  75   0   0   0   0   0\n  0   0   0   0   0 204 255 255 255 255  75
+    \  0   0   0   0   0\n  0   0   0   0   0 204 255 255 255 255  75   0   0   0
+    \  0   0\n  0   0   0   0   0 204 255 255 255 255  75   0   0   0   0   0\n  0
+    \  0   0   0   0 204 255 255 255 255  75   0   0   0   0   0\n\n153 184 184 184
+    184 184 184 184 184 184 210 141 141 141 141  60\n255 255 255 255 255 255 255 255
+    255 255 204   0   0   0   0   0\n255 255 255 255 255 255 255 255 255 255 204   0
+    \  0   0   0   0\n255 255 255 255 255 255 255 255 255 255 204   0   0   0   0
+    \  0\n255 255 255 255 255 255 255 255 255 255 204   0   0   0   0   0\n214 255
+    255 255 255 255 255 255 255 255 219  75  75  75  75  75\n114 255 255 255 255 255
+    255 255 255 255 255 255 255 255 255 255\n114 255 255 255 255 255 255 255 255 255
+    255 255 255 255 255 255\n114 255 255 255 255 255 255 255 255 255 255 255 255 255
+    255 255\n114 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255\n114
+    255 255 255 255 240 204 204 204 204 204 204 204 204 204 204\n114 255 255 255 255
+    180   0   0   0   0   0   0   0   0   0   0\n114 255 255 255 255 180   0   0   0
     \  0   0   0   0   0   0   0\n114 255 255 255 255 180   0   0   0   0   0   0
-    \  0   0   0   0\n153 184 184 184 184  94   0   0   0   0  98 141 141 141 141
-    \ 60\n255 255 255 255 255 180   0   0   0   0   0   0   0   0   0   0\n255 255
-    255 255 255 180   0   0   0   0   0   0   0   0   0   0\n255 255 255 255 255 180
-    \  0   0   0   0   0   0   0   0   0   0\n255 255 255 255 255 180   0   0   0
-    \  0   0   0   0   0   0   0\n180 180 180 180 180 127   0   0   0   0  15  75
-    \ 75  75  75  75\n  0   0   0   0   0   0   0   0   0   0  50 255 255 255 255
-    255\n  0   0   0   0   0   0   0   0   0   0  50 255 255 255 255 255\n  0   0
-    \  0   0   0   0   0   0   0   0  50 255 255 255 255 255\n  0   0   0   0   0
-    \  0   0   0   0   0  50 255 255 255 255 255\n 23  50  50  50  50  36   0   0
-    \  0   0  40 204 204 204 204 204\n114 255 255 255 255 180   0   0   0   0   0
-    \  0   0   0   0   0\n114 255 255 255 255 180   0   0   0   0   0   0   0   0
-    \  0   0\n114 255 255 255 255 180   0   0   0   0   0   0   0   0   0   0\n114
-    255 255 255 255 180   0   0   0   0   0   0   0   0   0   0\n114 255 255 255 255
-    180   0   0   0   0   0   0   0   0   0   0\n153 184 184 184 184  94   0   0   0
-    \  0  98 141 141 141 141  60\n255 255 255 255 255 180   0   0   0   0   0   0
-    \  0   0   0   0\n255 255 255 255 255 180   0   0   0   0   0   0   0   0   0
-    \  0\n255 255 255 255 255 180   0   0   0   0   0   0   0   0   0   0\n255 255
-    255 255 255 180   0   0   0   0   0   0   0   0   0   0\n180 180 180 180 180 127
-    \  0   0   0   0  15  75  75  75  75  75\n  0   0   0   0   0   0   0   0   0
-    \  0  50 255 255 255 255 255\n  0   0   0   0   0   0   0   0   0   0  50 255
-    255 255 255 255\n  0   0   0   0   0   0   0   0   0   0  50 255 255 255 255 255\n
-    \ 0   0   0   0   0   0   0   0   0   0  50 255 255 255 255 255\n 23  50  50  50
-    \ 50  36   0   0   0   0  40 204 204 204 204 204\n114 255 255 255 255 180   0
-    \  0   0   0   0   0   0   0   0   0\n114 255 255 255 255 180   0   0   0   0
-    \  0   0   0   0   0   0\n114 255 255 255 255 180   0   0   0   0   0   0   0
-    \  0   0   0\n114 255 255 255 255 180   0   0   0   0   0   0   0   0   0   0\n114
-    255 255 255 255 180   0   0   0   0   0   0   0   0   0   0\n\n  0   0   0   0
-    \  0  75 255 255 255 255 204   0   0   0   0   0\n  0   0   0   0   0  75 255
-    255 255 255 204   0   0   0   0   0\n  0   0   0   0   0  75 255 255 255 255 204
-    \  0   0   0   0   0\n  0   0   0   0   0  75 255 255 255 255 204   0   0   0
-    \  0   0\n  0   0   0   0   0  75 255 255 255 255 204   0   0   0   0   0\n  0
-    \  0   0   0   0  15  50  50  50  50  40   0   0   0   0   0\n  0   0   0   0
-    \  0   0   0   0   0   0   0   0   0   0   0   0\n  0   0   0   0   0   0   0
-    \  0   0   0   0   0   0   0   0   0\n  0   0   0   0   0   0   0   0   0   0
-    \  0   0   0   0   0   0\n  0   0   0   0   0   0   0   0   0   0   0   0   0
-    \  0   0   0\n  0 180 180 180 180 127   0   0   0   0  36 180 180 180 180 180\n
-    \ 0 255 255 255 255 180   0   0   0   0  50 255 255 255 255 255\n  0 255 255 255
-    255 180   0   0   0   0  50 255 255 255 255 255\n  0 255 255 255 255 180   0   0
-    \  0   0  50 255 255 255 255 255\n  0 255 255 255 255 180   0   0   0   0  50
-    255 255 255 255 255\n  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-    \  0\n  0   0   0   0   0  75 255 255 255 255 204   0   0   0   0   0\n  0   0
+    \  0   0   0   0\n114 255 255 255 255 180   0   0   0   0   0   0   0   0   0
+    \  0\n114 255 255 255 255 180   0   0   0   0   0   0   0   0   0   0\n153 184
+    184 184 184 184 184 184 184 184 210 141 141 141 141  60\n255 255 255 255 255 255
+    255 255 255 255 204   0   0   0   0   0\n255 255 255 255 255 255 255 255 255 255
+    204   0   0   0   0   0\n255 255 255 255 255 255 255 255 255 255 204   0   0   0
+    \  0   0\n255 255 255 255 255 255 255 255 255 255 204   0   0   0   0   0\n214
+    255 255 255 255 255 255 255 255 255 219  75  75  75  75  75\n114 255 255 255 255
+    255 255 255 255 255 255 255 255 255 255 255\n114 255 255 255 255 255 255 255 255
+    255 255 255 255 255 255 255\n114 255 255 255 255 255 255 255 255 255 255 255 255
+    255 255 255\n114 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255\n114
+    255 255 255 255 240 204 204 204 204 204 204 204 204 204 204\n114 255 255 255 255
+    180   0   0   0   0   0   0   0   0   0   0\n114 255 255 255 255 180   0   0   0
+    \  0   0   0   0   0   0   0\n114 255 255 255 255 180   0   0   0   0   0   0
+    \  0   0   0   0\n114 255 255 255 255 180   0   0   0   0   0   0   0   0   0
+    \  0\n114 255 255 255 255 180   0   0   0   0   0   0   0   0   0   0\n153 184
+    184 184 184 184 184 184 184 184 210 141 141 141 141  60\n255 255 255 255 255 255
+    255 255 255 255 204   0   0   0   0   0\n255 255 255 255 255 255 255 255 255 255
+    204   0   0   0   0   0\n255 255 255 255 255 255 255 255 255 255 204   0   0   0
+    \  0   0\n255 255 255 255 255 255 255 255 255 255 204   0   0   0   0   0\n214
+    255 255 255 255 255 255 255 255 255 219  75  75  75  75  75\n114 255 255 255 255
+    255 255 255 255 255 255 255 255 255 255 255\n114 255 255 255 255 255 255 255 255
+    255 255 255 255 255 255 255\n114 255 255 255 255 255 255 255 255 255 255 255 255
+    255 255 255\n114 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255\n114
+    255 255 255 255 240 204 204 204 204 204 204 204 204 204 204\n114 255 255 255 255
+    180   0   0   0   0   0   0   0   0   0   0\n114 255 255 255 255 180   0   0   0
+    \  0   0   0   0   0   0   0\n114 255 255 255 255 180   0   0   0   0   0   0
+    \  0   0   0   0\n114 255 255 255 255 180   0   0   0   0   0   0   0   0   0
+    \  0\n114 255 255 255 255 180   0   0   0   0   0   0   0   0   0   0\n\n  0   0
     \  0   0   0  75 255 255 255 255 204   0   0   0   0   0\n  0   0   0   0   0
     \ 75 255 255 255 255 204   0   0   0   0   0\n  0   0   0   0   0  75 255 255
     255 255 204   0   0   0   0   0\n  0   0   0   0   0  75 255 255 255 255 204   0
-    \  0   0   0   0\n  0   0   0   0   0  15  50  50  50  50  40   0   0   0   0
-    \  0\n  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0\n  0   0
-    \  0   0   0   0   0   0   0   0   0   0   0   0   0   0\n  0   0   0   0   0
-    \  0   0   0   0   0   0   0   0   0   0   0\n  0   0   0   0   0   0   0   0
-    \  0   0   0   0   0   0   0   0\n  0 180 180 180 180 127   0   0   0   0  36
-    180 180 180 180 180\n  0 255 255 255 255 180   0   0   0   0  50 255 255 255 255
-    255\n  0 255 255 255 255 180   0   0   0   0  50 255 255 255 255 255\n  0 255
-    255 255 255 180   0   0   0   0  50 255 255 255 255 255\n  0 255 255 255 255 180
-    \  0   0   0   0  50 255 255 255 255 255\n  0   0   0   0   0   0   0   0   0
-    \  0   0   0   0   0   0   0\n  0   0   0   0   0  75 255 255 255 255 204   0
     \  0   0   0   0\n  0   0   0   0   0  75 255 255 255 255 204   0   0   0   0
-    \  0\n  0   0   0   0   0  75 255 255 255 255 204   0   0   0   0   0\n  0   0
-    \  0   0   0  75 255 255 255 255 204   0   0   0   0   0\n  0   0   0   0   0
-    \ 75 255 255 255 255 204   0   0   0   0   0\n  0   0   0   0   0  15  50  50
-    \ 50  50  40   0   0   0   0   0\n  0   0   0   0   0   0   0   0   0   0   0
-    \  0   0   0   0   0\n  0   0   0   0   0   0   0   0   0   0   0   0   0   0
-    \  0   0\n  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0\n  0
-    \  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0\n  0 180 180 180
-    180 127   0   0   0   0  36 180 180 180 180 180\n  0 255 255 255 255 180   0   0
-    \  0   0  50 255 255 255 255 255\n  0 255 255 255 255 180   0   0   0   0  50
-    255 255 255 255 255\n  0 255 255 255 255 180   0   0   0   0  50 255 255 255 255
-    255\n  0 255 255 255 255 180   0   0   0   0  50 255 255 255 255 255\n  0   0
-    \  0   0   0   0   0   0   0   0   0   0   0   0   0   0\n"
+    \  0\n  0 204 204 204 204 219 255 255 255 255 204   0   0   0   0   0\n  0 255
+    255 255 255 255 255 255 255 255 204   0   0   0   0   0\n  0 255 255 255 255 255
+    255 255 255 255 204   0   0   0   0   0\n  0 255 255 255 255 255 255 255 255 255
+    204   0   0   0   0   0\n  0 255 255 255 255 255 255 255 255 255 204   0   0   0
+    \  0   0\n  0 255 255 255 255 255 255 255 255 255 240 180 180 180 180 180\n  0
+    255 255 255 255 255 255 255 255 255 255 255 255 255 255 255\n  0 255 255 255 255
+    255 255 255 255 255 255 255 255 255 255 255\n  0 255 255 255 255 255 255 255 255
+    255 255 255 255 255 255 255\n  0 255 255 255 255 255 255 255 255 255 255 255 255
+    255 255 255\n  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0\n
+    \ 0   0   0   0   0  75 255 255 255 255 204   0   0   0   0   0\n  0   0   0   0
+    \  0  75 255 255 255 255 204   0   0   0   0   0\n  0   0   0   0   0  75 255
+    255 255 255 204   0   0   0   0   0\n  0   0   0   0   0  75 255 255 255 255 204
+    \  0   0   0   0   0\n  0   0   0   0   0  75 255 255 255 255 204   0   0   0
+    \  0   0\n  0 204 204 204 204 219 255 255 255 255 204   0   0   0   0   0\n  0
+    255 255 255 255 255 255 255 255 255 204   0   0   0   0   0\n  0 255 255 255 255
+    255 255 255 255 255 204   0   0   0   0   0\n  0 255 255 255 255 255 255 255 255
+    255 204   0   0   0   0   0\n  0 255 255 255 255 255 255 255 255 255 204   0   0
+    \  0   0   0\n  0 255 255 255 255 255 255 255 255 255 240 180 180 180 180 180\n
+    \ 0 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255\n  0 255 255 255
+    255 255 255 255 255 255 255 255 255 255 255 255\n  0 255 255 255 255 255 255 255
+    255 255 255 255 255 255 255 255\n  0 255 255 255 255 255 255 255 255 255 255 255
+    255 255 255 255\n  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0\n
+    \ 0   0   0   0   0  75 255 255 255 255 204   0   0   0   0   0\n  0   0   0   0
+    \  0  75 255 255 255 255 204   0   0   0   0   0\n  0   0   0   0   0  75 255
+    255 255 255 204   0   0   0   0   0\n  0   0   0   0   0  75 255 255 255 255 204
+    \  0   0   0   0   0\n  0   0   0   0   0  75 255 255 255 255 204   0   0   0
+    \  0   0\n  0 204 204 204 204 219 255 255 255 255 204   0   0   0   0   0\n  0
+    255 255 255 255 255 255 255 255 255 204   0   0   0   0   0\n  0 255 255 255 255
+    255 255 255 255 255 204   0   0   0   0   0\n  0 255 255 255 255 255 255 255 255
+    255 204   0   0   0   0   0\n  0 255 255 255 255 255 255 255 255 255 204   0   0
+    \  0   0   0\n  0 255 255 255 255 255 255 255 255 255 240 180 180 180 180 180\n
+    \ 0 255 255 255 255 255 255 255 255 255 255 255 255 255 255 255\n  0 255 255 255
+    255 255 255 255 255 255 255 255 255 255 255 255\n  0 255 255 255 255 255 255 255
+    255 255 255 255 255 255 255 255\n  0 255 255 255 255 255 255 255 255 255 255 255
+    255 255 255 255\n  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0\n"
   PatternWidth: 0.08
   BarcodeID: 0
   MultiConfigFile: 
@@ -5121,6 +4654,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countDown_text: {fileID: 756980351}
   question_text: {fileID: 2081257333}
+  givenAnswer: {fileID: 330927511}
   question_set_gameObject: {fileID: 1007614390}
   papyrManager_gameObject: {fileID: 79530783}
   papyrManager: {fileID: 0}
@@ -5306,7 +4840,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   secondsToRemainVisible: 0
   eventReceiver: {fileID: 2016934721}
-  _markerTag: kaije
+  _markerTag: true
+--- !u!1 &1705976946
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1705976947}
+  - component: {fileID: 1705976948}
+  m_Layer: 8
+  m_Name: Manager-no
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1705976947
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1705976946}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 398190064}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1705976948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1705976946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfd280a7ca6d4aab931b739d12479e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value: false
+  questionManager_gameObject: {fileID: 1669707315}
+  questionManager: {fileID: 0}
 --- !u!1001 &1712081304
 Prefab:
   m_ObjectHideFlags: 0
@@ -5583,129 +5160,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: fe1e9d43b06594294803db4459c54472,
     type: 3}
   m_PrefabInternal: {fileID: 110756834}
---- !u!1 &1795643567
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1795643568}
-  - component: {fileID: 1795643571}
-  - component: {fileID: 1795643570}
-  - component: {fileID: 1795643569}
-  m_Layer: 5
-  m_Name: Button-No
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1795643568
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1795643567}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 430844577}
-  m_Father: {fileID: 1918195792}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -180, y: -220.00002}
-  m_SizeDelta: {x: 180, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1795643569
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1795643567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1795643570}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1669707317}
-        m_MethodName: forwardResponse
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: false
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
---- !u!114 &1795643570
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1795643567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &1795643571
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1795643567}
-  m_CullTransparentMesh: 0
 --- !u!1 &1823115219
 GameObject:
   m_ObjectHideFlags: 0
@@ -6001,9 +5455,7 @@ RectTransform:
   m_Children:
   - {fileID: 756980350}
   - {fileID: 2081257332}
-  - {fileID: 337556603}
-  - {fileID: 1795643568}
-  - {fileID: 719627936}
+  - {fileID: 330927510}
   m_Father: {fileID: 79530784}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6012,81 +5464,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1944087254
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1944087255}
-  - component: {fileID: 1944087257}
-  - component: {fileID: 1944087256}
-  m_Layer: 5
-  m_Name: Text-Pass
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1944087255
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1944087254}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 719627936}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1944087256
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1944087254}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 50
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 70
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Pass
---- !u!222 &1944087257
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1944087254}
-  m_CullTransparentMesh: 0
 --- !u!1 &1978394503
 GameObject:
   m_ObjectHideFlags: 0
@@ -6320,7 +5697,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 483568835}
   m_Father: {fileID: 197190001}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6336,8 +5714,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   secondsToRemainVisible: 0
-  eventReceiver: {fileID: 0}
-  _markerTag: vert
+  eventReceiver: {fileID: 483568834}
+  _markerTag: pass
 --- !u!1 &2081257331
 GameObject:
   m_ObjectHideFlags: 0
