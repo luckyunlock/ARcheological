@@ -25,13 +25,15 @@ public class QuestionManager : MonoBehaviour {
 
         //Get the question and display it
         currentQuestion = question_set.getCurrentQuestion();
-        givenAnswer.gameObject.SetActive(false);
+        givenAnswer.text = "Show a marker to answer";
+        givenAnswer.gameObject.SetActive(true);
         dispayQuestion();
 
     }
 
     public void startCountDown(){
-        givenAnswer.gameObject.SetActive(false);
+        givenAnswer.text = "Show a marker to answer";
+        givenAnswer.gameObject.SetActive(true);
         seconds_remained = 120-30*question_set.getAttemps(); 
         InvokeRepeating("decreaseCountDown", 0.0f, 1.0f);
     }
