@@ -14,12 +14,12 @@ public class AnchorQuesite : MonoBehaviour,QuesiteSet
     public List<MyTriple> questions = new List<MyTriple>();
 
     public AnchorQuesite(){
-        questions.Add(new MyTriple(0, "q0", true));
-        questions.Add(new MyTriple(1, "q1", true));
-        questions.Add(new MyTriple(2, "q2", true));
-        questions.Add(new MyTriple(3, "q3", true));
-        questions.Add(new MyTriple(4, "q4", true));
-        questions.Add(new MyTriple(5, "q5", true));
+        questions.Add(new MyTriple(0, "The marmor table explain you tight stuff?", true));
+        questions.Add(new MyTriple(1, "Are you sure?", true));
+        questions.Add(new MyTriple(2, "Would you get your hand on fire?", true));
+        questions.Add(new MyTriple(3, "Really?", true));
+        questions.Add(new MyTriple(4, "Are you kidding?", false));
+        questions.Add(new MyTriple(5, "Are you satisfied now?", true));
     }
 
     public int getAttemps(){ return attempts; }
